@@ -41,4 +41,4 @@ jobs:
           automatic_release_tag: "upstream-${{ env.UPSTREAM_VERSION }}"
           prerelease: true
           title: Nightly build
-          files: out.zip
+          files: out.7z
