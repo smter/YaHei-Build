@@ -5,10 +5,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: archlinux:latest
     steps:
       - name: Install dependencies
-        run: pacman -Syu --noconfirm git fontforge curl p7zip jq
+        run: sudo apt install git fontforge curl p7zip-full jq
       - uses: actions/checkout@v2
       - name: Grab latest version
         run: |
