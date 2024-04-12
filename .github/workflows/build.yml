@@ -28,7 +28,7 @@ jobs:
       - name: Compress font
         run: |
           cd out
-          7z a ../out.7z *
+          7z a ../out.7z * -mx=9
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
