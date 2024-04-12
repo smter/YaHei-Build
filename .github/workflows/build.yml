@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install dependencies
-        run: sudo apt install git fontforge curl p7zip-full jq
+        run: sudo apt install git fontforge curl p7zip-full jq python3 python3-fontforge
       - uses: actions/checkout@v2
       - name: Grab latest version
         run: |
