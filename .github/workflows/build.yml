@@ -31,7 +31,7 @@ jobs:
           cd out
           7z a ../out.7z * -mx=9
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: out
           path: out
